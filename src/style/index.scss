@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// @import "./skeleton/skeleton.scss";
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #DA7D02;
+
+// 2. Import default variables and available mixins.
+@import "./navbar.scss";
+@import "./button.scss";
+@import "../../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
+@import "../../node_modules/uikit/src/scss/uikit-theme.scss";
+// @import "../../node_modules/uikit/src/scss/uikit.scss";
+@import "../../node_modules/uikit/src/scss/components/navbar.scss";
+@import "../../node_modules/uikit/src/scss/components/container.scss";
+@import "../../node_modules/uikit/src/scss/components/margin.scss";
+@import "../../node_modules/uikit/src/scss/components/padding.scss";
+@import "../../node_modules/uikit/src/scss/components/nav.scss";
+@import "../../node_modules/uikit/src/scss/components/button.scss";
+@import "../../node_modules/uikit/src/scss/components/form.scss";

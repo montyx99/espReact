@@ -1,0 +1,25 @@
+$default-color: #fff;
+$default-color-active-text: #666;
+a.uk-button.inverse {
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    border-color: $default-color;
+    color: $default-color;
+    background-color: transparent;
+}
+
+a.uk-button.inverse.default {
+    color: $default-color;
+    background: rgba(255,255,255,0);
+}
+
+a.uk-button.inverse.default:hover {
+    color: $default-color;
+    background: rgba(255,255,255,0.2);
+}
+
+a.uk-button.inverse.default:active {
+    color: $default-color;
+    background: rgba(255,255,255,0.0);
+}

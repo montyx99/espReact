@@ -8,7 +8,14 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-scripts": "3.3.0",
+    "uikit": "^3.2.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "http-serve": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

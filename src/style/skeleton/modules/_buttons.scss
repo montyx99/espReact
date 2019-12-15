@@ -1,0 +1,282 @@
+// Buttons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $btn-default;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: $global-radius;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input {
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: $btn-default;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: $global-radius;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+}
+
+.button:hover,
+button:hover {
+  color: $dark-grey;
+  border-color: lighten($dark-grey, 33.3%);
+  outline: 0;
+}
+
+input {
+  &[type="submit"]:hover,
+  &[type="reset"]:hover,
+  &[type="button"]:hover {
+    color: $dark-grey;
+    border-color: lighten($dark-grey, 33.3%);
+    outline: 0;
+  }
+}
+
+.button:focus,
+button:focus {
+  color: $dark-grey;
+  border-color: lighten($dark-grey, 33.3%);
+  outline: 0;
+}
+
+input {
+  &[type="submit"]:focus,
+  &[type="reset"]:focus,
+  &[type="button"]:focus {
+    color: $dark-grey;
+    border-color: lighten($dark-grey, 33.3%);
+    outline: 0;
+  }
+}
+
+.button.button-primary,
+button.button-primary {
+  color: #fff;
+  background-color: $btn-primary;
+  border-color: $btn-primary;
+}
+
+input {
+  &[type="submit"].button-primary,
+  &[type="reset"].button-primary,
+  &[type="button"].button-primary {
+    color: #fff;
+    background-color: $btn-primary;
+    border-color: $btn-primary;
+  }
+}
+
+.button.button-primary:hover,
+button.button-primary:hover {
+  color: #fff;
+  background-color: lighten($btn-primary, 10%);
+  border-color: lighten($btn-primary, 10%);
+}
+
+input {
+  &[type="submit"].button-primary:hover,
+  &[type="reset"].button-primary:hover,
+  &[type="button"].button-primary:hover {
+    color: #fff;
+    background-color: lighten($btn-primary, 10%);
+    border-color: lighten($btn-primary, 10%);
+  }
+}
+
+input {
+  &[type="submit"].button-primary:focus,
+  &[type="reset"].button-primary:focus,
+  &[type="button"].button-primary:focus {
+    color: #fff;
+    background-color: lighten($btn-primary, 10%);
+    border-color: lighten($btn-primary, 10%);
+  }
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    height: 38px;
+    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+    background-color: #fff;
+    border: 1px solid lighten($border-color, 8.8%);
+    border-radius: $global-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+}
+
+.button.button-primary:active,
+button.button-primary:active {
+  color: #fff;
+  background-color: darken($btn-primary, 10%);
+  border-color: darken($btn-primary, 10%);
+}
+
+
+// secondary
+.button.button-secondary,
+button.button-secondary {
+  color: #fff;
+  background-color: $btn-secondary;
+  border-color: $btn-secondary;
+}
+
+input {
+  &[type="submit"].button-secondary,
+  &[type="reset"].button-secondary,
+  &[type="button"].button-secondary {
+    color: #fff;
+    background-color: $btn-secondary;
+    border-color: $btn-secondary;
+  }
+}
+
+.button.button-secondary:hover,
+button.button-secondary:hover {
+  color: #fff;
+  background-color: lighten($btn-secondary, 10%);
+  border-color: lighten($btn-secondary, 10%);
+}
+
+input {
+  &[type="submit"].button-secondary:hover,
+  &[type="reset"].button-secondary:hover,
+  &[type="button"].button-secondary:hover {
+    color: #fff;
+    background-color: lighten($btn-secondary, 10%);
+    border-color: lighten($btn-secondary, 10%);
+  }
+}
+
+input {
+  &[type="submit"].button-secondary:focus,
+  &[type="reset"].button-secondary:focus,
+  &[type="button"].button-secondary:focus {
+    color: #fff;
+    background-color: lighten($btn-secondary, 10%);
+    border-color: lighten($btn-secondary, 10%);
+  }
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    height: 38px;
+    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+    background-color: #fff;
+    border: 1px solid lighten($border-color, 8.8%);
+    border-radius: $global-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+}
+
+.button.button-secondary:active,
+button.button-secondary:active {
+  color: #fff;
+  background-color: darken($btn-secondary, 10%);
+  border-color: darken($btn-secondary, 10%);
+}
+
+// cancel
+.button.button-cancel,
+button.button-cancel {
+  color: #fff;
+  background-color: $btn-cancel;
+  border-color: $btn-cancel;
+}
+
+input {
+  &[type="submit"].button-cancel,
+  &[type="reset"].button-cancel,
+  &[type="button"].button-cancel {
+    color: #fff;
+    background-color: $btn-cancel;
+    border-color: $btn-cancel;
+  }
+}
+
+.button.button-cancel:hover,
+button.button-cancel:hover {
+  color: #fff;
+  background-color: lighten($btn-cancel, 10%);
+  border-color: lighten($btn-cancel, 10%);
+}
+
+input {
+  &[type="submit"].button-cancel:hover,
+  &[type="reset"].button-cancel:hover,
+  &[type="button"].button-cancel:hover {
+    color: #fff;
+    background-color: lighten($btn-cancel, 10%);
+    border-color: lighten($btn-cancel, 10%);
+  }
+}
+
+input {
+  &[type="submit"].button-cancel:focus,
+  &[type="reset"].button-cancel:focus,
+  &[type="button"].button-cancel:focus {
+    color: #fff;
+    background-color: lighten($btn-cancel, 10%);
+    border-color: lighten($btn-cancel, 10%);
+  }
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    height: 38px;
+    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+    background-color: #fff;
+    border: 1px solid lighten($border-color, 8.8%);
+    border-radius: $global-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+}
+
+.button.button-cancel:active,
+button.button-cancel:active {
+  color: #fff;
+  background-color: darken($btn-cancel, 10%);
+  border-color: darken($btn-cancel, 10%);
+}

@@ -1,0 +1,20 @@
+$header-bgcolor: #FFCF99;
+$header-text-color: #005D82;
+$header-text-color-hover: lighten($header-text-color, 10%);
+$header-text-color-active: #00171F;
+
+$navbar-background: $header-bgcolor;
+$navbar-dropdown-background: $header-bgcolor !default;
+$navbar-dropdown-nav-item-color: $header-text-color !default;
+$navbar-nav-item-height: 50px !default;
+$navbar-nav-item-color: $header-text-color;
+$navbar-nav-item-hover-color: $header-text-color-hover;
+$navbar-nav-item-onclick-color: $header-text-color-active;
+$navbar-nav-item-active-color: $header-text-color-active;
+
+$navbar-dropdown-nav-item-color: $header-text-color;
+$navbar-dropdown-nav-item-hover-color: $header-text-color-hover;
+$navbar-dropdown-nav-item-active-color: $header-text-color-active;
+$navbar-dropdown-nav-sublist-item-color: $header-text-color;
+$navbar-dropdown-nav-sublist-item-hover-color: $header-text-color-hover;
+$navbar-dropdown-nav-sublist-item-active-color: $header-text-color-active;

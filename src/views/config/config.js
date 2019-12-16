@@ -9,7 +9,10 @@ class Config extends Component {
 
     componentDidMount() {
         fetch(`/api/test`)
-            .then(res => this.message = "OK")
+            .then((res) => {
+                this.setState({message: "OK"})
+            }
+        )
     }
 
     render() {
@@ -17,12 +20,7 @@ class Config extends Component {
             <div className="Config uk-grid">
                 <h1>API Call Test</h1>
                 <p>
-                {(() => {
-                    if("OK" === this.message) {
-                        return this.message
-                    }
-                    return "FALSE"
-                })()}
+                    API: { "OK" === this.state.message ? this.state.message : 'Loading...' }
                 </p>
             </div>
         )

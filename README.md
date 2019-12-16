@@ -41,7 +41,7 @@ Then run:
 `yarn start`
 
 ### About the backend
-I'm implemented a backend solution too to host the current files. In some days after some code modification, I'm going to upload my ESP8266 arduino code too, to another repository. I'm going to link them together.
+I'm implemented a [backend solution](https://github.com/montyx99/espReact) too to host the current files. You can use to test the espReact.
 
 ### React-router
 React router is used to handle PWA/SPA like routing. I've thought about many different routers to use, but all of them have issues, that I didn't like, so I've made my decision to use the robust (I know this is huge) router. If someone has the capability to integrate another router, just contribute, and provide a good solution

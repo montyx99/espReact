@@ -9,25 +9,22 @@ I've created a minimal implementation of a casual ESP8266 UI based on:
 
 ## Table of content
 - [ESPReact](#espreact)
-  * [Installation](#installation)
-  * [About the backend](#about-the-backend)
-  * [React-router](#react-router)
-    + [Hash Router](#hash-router)
-  * [API calls](#api-calls)
-  * [UIkit](#uikit)
-  * [Build Hacking](#build-hacking)
-  * [Gzip Optimization](#gzip-optimization)
-  * [How to test gzipped files easily](#how-to-test-gzipped-files-easily)
-  * [How to move to ESP8266](#how-to-move-to-esp8266)
-  * [Final thoughts](#final-thoughts)
-  * [Next steps](#next-steps)
-  * [How to contribute](#how-to-contribute)
+- [Table of content](#table-of-content)
+  - [Installation](#installation)
+  - [About the backend](#about-the-backend)
+  - [React-router](#react-router)
+    - [Hash Router](#hash-router)
+  - [API calls](#api-calls)
+  - [UIkit](#uikit)
+  - [Build Hacking](#build-hacking)
+  - [Gzip Optimization](#gzip-optimization)
+  - [How to test gzipped files easily](#how-to-test-gzipped-files-easily)
+  - [How to move to ESP8266](#how-to-move-to-esp8266)
+  - [Final thoughts](#final-thoughts)
+  - [Next steps](#next-steps)
+  - [How to contribute](#how-to-contribute)
 - [From original Create React App documentation](#from-original-create-react-app-documentation)
-  * [Available Scripts](#available-scripts)
-  * [`yarn start`](#-yarn-start-)
-  * [`yarn test`](#-yarn-test-)
-  * [`yarn build`](#-yarn-build-)
-  * [`yarn eject`](#-yarn-eject-)
+  - [Available Scripts](#available-scripts)
 
 ### Installation
 To get the base package clone the git library:
@@ -51,10 +48,10 @@ React router is used to handle PWA/SPA like routing. I've thought about many dif
 
 #### Hash Router
 This is very important in case of ESP devices. The webserver, that I use is a modified [ESP8266Webserver](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WebServer). This cannot handle normal browser routing as I experienced. This is the reason why I use the HashRouter in the code
-----
+
 ### API calls
 You can find a very beginner API call in the [Config](./src/views/config/config.js) component.
-----
+
 ### UIkit
 I've tried many different UI framework, like Preact, Skeleton, etc. Finally I've chosen the UIkit, because this is:
 - Lightweight enough for ESP devices
@@ -65,7 +62,7 @@ You can find great examples in [index.scss](./src/style/index.scss), and other S
 ### Build Hacking
 This is a very important topic. The React uses an excellent bundling solution during the build process.
 **BUT** this is really bad in case of SPIFF usage of the ESP8266. The SPIFF can store files which has no longer full path than 32 characters. Also there is no possible way to create folders on the SPIFF storage. So I had to hack the [webpack.config.js](./webpack.config.js) of the react-scripts package. You can find the custom webpack.config.js file in the root of my repo. You need to overwrite that you can find in the `node_modules/react-scripts/config` folder. This will eliminate the chunk string and the hash from the name of every affected files, and all files will be built into the same folder level. !!! You need to update this manually later. Do not forget about it !!!
-----
+
 ### Gzip Optimization
 This is very important to know, all modern browser (including mobile browsers) can handle gzipped files. My backend can provide gzip files. You can run the following commands to build and gzip all files:
 `yarn build` will build the files into the `build` folder
@@ -88,7 +85,7 @@ I know only the steps for my devices, the ESP8266. My ordered ESP32 devices are 
 I know, this is not the prettiest codebase on the Earth. This was done in one single night, but I thought that this will be a great starting point to work together on a better final package for the Makers. I hope that this will be a great help for everyone. I appreciate every feedback, new found issues, and contribution.
 
 **Happy coding**
-----
+
 ### Next steps
 - Solve every opened issues will come
 - API calls (in progress, backend ready)
@@ -97,7 +94,7 @@ I know, this is not the prettiest codebase on the Earth. This was done in one si
 - Modularization
 - - Find easy way to change UIkit to another UI framework
 - - Solve to use another routers
-----
+
 ### How to contribute
 Please send a [mail](mailto:monty.whisp@gmail.com), or find me on discord: MonitQ#7059
 
@@ -140,3 +137,4 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+

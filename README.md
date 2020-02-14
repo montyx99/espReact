@@ -34,35 +34,21 @@ I've created a minimal implementation of a casual ESP8266 UI based on:
 -  [ESPReact](#espreact)
 
 -  [Table of content](#table-of-content)
-
 -  [Installation](#installation)
-
 -  [About the backend](#about-the-backend)
-
 -  [React-router](#react-router)
-
 -  [Hash Router](#hash-router)
-
 -  [API calls](#api-calls)
-
 -  [UIkit](#uikit)
-
--  [Build Hacking](#build-hacking)
-
+-  [Build Hacking](#build-hacking) **DEPRECATED**
+-  [New Build Pipeline](#new-build-pipeline)
 -  [Gzip Optimization](#gzip-optimization)
-
 -  [How to test gzipped files easily](#how-to-test-gzipped-files-easily)
-
 -  [How to move to ESP8266](#how-to-move-to-esp8266)
-
 -  [Final thoughts](#final-thoughts)
-
 -  [Next steps](#next-steps)
-
 -  [How to contribute](#how-to-contribute)
-
 -  [From original Create React App documentation](#from-original-create-react-app-documentation)
-
 -  [Available Scripts](#available-scripts)
 
   

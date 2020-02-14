@@ -16,7 +16,7 @@ I've created a minimal implementation of a casual ESP8266 UI based on:
 
 
 ## Changelog
-**2020-02-14 - Version 0.0.2:**
+**2020-02-14 - Version 0.2.0:**
 -  New build pipeline.
 -  Using the fully refactored backend, moved to [esp-rest](https://github.com/montyx99/esp-rest). All service calls modified based on this, mostly in the Home view.
 -  WiFi network connection implemented
@@ -25,6 +25,9 @@ I've created a minimal implementation of a casual ESP8266 UI based on:
 -  [ ] Separate wifi setup routing from the other views. While the ESP8266 in AP mode, only the wifi setup view should be shown.
 -  [ ] Authentication and user management
 -  [ ] SSL/HTTPS integration frontent side
+
+## Kudos
+-  [rjwats](https://github.com/rjwats) for his project: [esp8266-react](https://github.com/rjwats/esp8266-react)
 
 ## Table of content
 

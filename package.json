@@ -24,7 +24,7 @@
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "serve": "http-serve ./build --gzip",
-    "postinstall": "echo DONE"
+    "postinstall": "."
 
   },
   "eslintConfig": {

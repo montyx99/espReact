@@ -23,7 +23,9 @@
     "build": "react-app-rewired build && yarn postinstall",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
-    "serve": "http-serve ./build --gzip"
+    "serve": "http-serve ./build --gzip",
+    "postinstall": "echo DONE"
+
   },
   "eslintConfig": {
     "extends": "react-app"

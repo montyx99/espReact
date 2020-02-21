@@ -23,8 +23,7 @@
     "build": "react-app-rewired build && yarn postinstall",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
-    "serve": "http-serve ./build --gzip",
-    "postinstall": "cp -r ./build/* $INIT_CWD/../platformio/EspJsonWs/data"
+    "serve": "http-serve ./build --gzip"
   },
   "eslintConfig": {
     "extends": "react-app"
